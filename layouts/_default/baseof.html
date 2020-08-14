@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LOTRem Ipsum 2.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="stylesheet" href="/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+		<link rel="manifest" href="favicons/site.webmanifest">
+		<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-config" content="favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff"> -->
+
+		<!--[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <![endif]-->
+	</head>
+	<body>
+		<header class="main-header">
+			<a class="logo" href="#">
+				<img src="/images/logo.png" alt="LOTRem Ipsum Logo">
+			</a>
+		</header>
+
+		<main>
+			<div class="container">
+				{{ block "main" . }}
+				{{ end }}
+			</div>
+		</main>
+
+		<footer class="main-footer">
+			<p class="disclaimer">&copy; 2020 LOTRem Ipsum. All rights reserved.</p>
+			<small>
+				Design by <a href="#" target="_blank" rel="noreferrer">Roland Szabo</a>.
+				Coding by <a href="#" target="_blank" rel="noreferrer">Istvan Hortobagyi</a>.
+				Illustrations by <a href="#" target="_blank" rel="noreferrer">Isabelle Russell</a>.
+			</small>
+		</footer>
+	</body>
+</html>

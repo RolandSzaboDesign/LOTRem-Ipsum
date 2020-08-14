@@ -1,0 +1,163 @@
+/* ──────────────────────────────────────────────────────────────┐
+│  LOTRem Ipsum 2.0                                              │
+└────────────────────────────────────────────────────────────── */
+
+/* CSS Reset
+   ------------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+
+/* Variables
+   ------------------------------------------------------------ */
+
+:root {
+	--bg: #e2f2e8;
+	--bg-dark: hsl(142, 12%, 88%);
+
+	--text: hsl(230, 20%, 45%);
+	--text-dark: hsl(230, 25%, 30%);
+
+	--highlight: hsl(142, 40%, 65%);
+	--highlight-dark: hsl(142, 45%, 55%);
+}
+
+
+
+/* Base Styles
+   ------------------------------------------------------------ */
+
+::selection {
+	color: var(--text-dark);
+	background-color: var(--highlight);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: initial; }
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: .75em;
+	color: var(--text);
+	letter-spacing: -.025em;
+	line-height: 1.5;
+	background-color: var(--bg);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* Typography
+   ------------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+h2 {
+	font-size: 1.25rem;
+	letter-spacing: -.05rem;
+}
+
+ul {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	list-style: disc;
+}
+
+ol {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	list-style: decimal;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+li {
+	margin-bottom: .5rem;
+}
+
+a {
+	color: var(--highlight-dark);
+	text-decoration: none;
+	border-bottom: 1px solid var(--highlight);
+}
+
+
+
+/* Header
+   ------------------------------------------------------------ */
+
+.main-header {
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.logo {
+	border: 0;
+}
+
+
+
+/* Main
+   ------------------------------------------------------------ */
+
+main {
+	margin: 1.5rem 1rem;
+	padding: 1rem;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 .625rem 1.5rem hsla(142, 50%, 30%, .125);
+}
+
+
+
+/* Footer
+   ------------------------------------------------------------ */
+
+.main-footer {
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.disclaimer {
+	margin-bottom: .5rem;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+
+
+/* Utility Classes
+   ------------------------------------------------------------ */
+
+.mt-0 { margin-top: 0; }
